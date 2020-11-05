@@ -1,0 +1,1 @@
+dotnet run -c Release -f netcoreapp3.1 --runtimes netcoreapp3.1 netcoreapp3.0 net5.0

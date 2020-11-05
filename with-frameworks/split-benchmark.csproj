@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFrameworks>netcoreapp3.0;netcoreapp3.1;net5.0</TargetFrameworks>
+    <RootNamespace>split_benchmark</RootNamespace>
+  </PropertyGroup>
+
+
+	<ItemGroup>
+		<PackageReference Include="BenchmarkDotNet" Version="0.12.1" />
+		<PackageReference Include="BlushingPenguin.JsonPath" Version="1.0.3" />
+		<PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+	</ItemGroup>
+
+
+	<ItemGroup>
+	  <None Update="PretendData.json">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	</ItemGroup>
+
+</Project>
